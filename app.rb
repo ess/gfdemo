@@ -5,7 +5,8 @@ App = Syro.new do
   get do
     res.json(
       JSON.dump(
-        greeting: 'hello'
+        greeting: 'hello',
+        hostname: `hostname`.strip,
       )
     )
   end
