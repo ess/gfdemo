@@ -7,6 +7,7 @@ App = Syro.new do
       JSON.dump(
         greeting: 'hello',
         hostname: `hostname`.strip,
+        now: Time.now.utc
       )
     )
   end
